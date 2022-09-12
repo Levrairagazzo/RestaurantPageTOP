@@ -1,4 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:honeydew ;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: 30px blue;
+    font-family: inherit;
+    box-shadow: inset 0px 0 7px 30px rgb(37 16 41);
+    background-color: rgb(69, 16, 80);
+    transition-duration: 0.5s;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 36px;
+}
+
+
 #recipeWrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+#content{
+    border: 0px;
+    padding: 0px;
+}
+
+.permanent{
+    background-color: aqua;
+    padding: 15px;
+}
+#buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+    
+}
+
+#header{
+    font-size: 36px;
+    display:flex ;
+    justify-content: center;
 }

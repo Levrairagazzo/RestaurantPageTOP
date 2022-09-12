@@ -46,15 +46,23 @@ export function createButton(text){
 
 export default function loadInitialPage(){
     const content = document.getElementById('content');
+    const permanent = document.createElement('div');
+    permanent.setAttribute('class', 'permanent');
+    content.appendChild(permanent);
 
-    const newHeader = createHeader('header', ' This is a new header');
-    content.appendChild(newHeader);
+    const newHeader = createHeader('header', "Welcome to Syd's Restaurant");
+    permanent.appendChild(newHeader);
 
-    const lasagnaPic = displayImage();
-    content.appendChild(lasagnaPic);
 
-    const recipeWrapper = displayGrid();
-    content.appendChild(recipeWrapper);
+    // const lasagnaPic = displayImage();
+    // content.appendChild(lasagnaPic);
+
+    // const recipeWrapper = displayGrid();
+    // content.appendChild(recipeWrapper);
+
+    const buttonContainer = document.createElement('div');
+    buttonContainer.setAttribute('id', 'buttonContainer');
+    permanent.appendChild(buttonContainer);
 
     const main = document.createElement('main');
     main.setAttribute('id', 'main');
