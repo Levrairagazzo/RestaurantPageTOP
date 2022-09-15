@@ -33,10 +33,7 @@ button{
     padding: 0px;
 }
 
-.permanent{
-    background-color: aqua;
-    padding: 15px;
-}
+
 #buttonContainer{
     display: flex;
     justify-content: space-around;
@@ -48,4 +45,15 @@ button{
     font-size: 36px;
     display:flex ;
     justify-content: center;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.permanent{
+    background-color: aqua;
+    padding: 15px;
 }

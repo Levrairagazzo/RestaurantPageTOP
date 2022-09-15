@@ -53,13 +53,6 @@ export default function loadInitialPage(){
     const newHeader = createHeader('header', "Welcome to Syd's Restaurant");
     permanent.appendChild(newHeader);
 
-
-    // const lasagnaPic = displayImage();
-    // content.appendChild(lasagnaPic);
-
-    // const recipeWrapper = displayGrid();
-    // content.appendChild(recipeWrapper);
-
     const buttonContainer = document.createElement('div');
     buttonContainer.setAttribute('id', 'buttonContainer');
     permanent.appendChild(buttonContainer);
@@ -67,9 +60,5 @@ export default function loadInitialPage(){
     const main = document.createElement('main');
     main.setAttribute('id', 'main');
     content.appendChild(main);
-
-    
-    
-   
 
 }
